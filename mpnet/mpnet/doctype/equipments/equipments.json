@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "autoname": "Equip.#####",
+ "creation": "2024-01-23 14:04:53.840426",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "room_id",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "room_id",
+   "fieldtype": "Link",
+   "label": "Room",
+   "options": "Rooms"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-24 13:55:07.503124",
+ "modified_by": "Administrator",
+ "module": "Mpnet",
+ "name": "Equipments",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "title"
+}
