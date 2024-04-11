@@ -1,28 +1,39 @@
 {
  "actions": [],
- "autoname": "Room.#####",
- "creation": "2024-01-23 13:47:27.165836",
+ "allow_rename": 1,
+ "autoname": "connection.#####",
+ "creation": "2024-02-01 14:52:09.177609",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "title",
-  "building_id",
+  "porta",
+  "portb",
   "notes"
  ],
  "fields": [
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "title"
+   "label": "title",
+   "read_only": 1,
+   "unique": 1
   },
   {
-   "default": "TBD",
-   "fieldname": "building_id",
+   "fieldname": "porta",
    "fieldtype": "Link",
-   "label": "building",
-   "options": "Buildings"
+   "in_list_view": 1,
+   "label": "porta",
+   "options": "ports",
+   "reqd": 1
+  },
+  {
+   "fieldname": "portb",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "portb",
+   "options": "ports",
+   "reqd": 1
   },
   {
    "fieldname": "notes",
@@ -32,10 +43,10 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-27 13:09:34.226981",
+ "modified": "2024-02-04 08:47:12.144190",
  "modified_by": "Administrator",
  "module": "Mpnet",
- "name": "Rooms",
+ "name": "connections",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [

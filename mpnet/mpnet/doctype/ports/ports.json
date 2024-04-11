@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "Ports.#####",
  "creation": "2024-01-24 20:19:49.433717",
@@ -8,7 +9,10 @@
  "field_order": [
   "portnum",
   "equipment_id",
-  "title"
+  "title",
+  "vlan",
+  "trunk",
+  "notes"
  ],
  "fields": [
   {
@@ -27,13 +31,29 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "is_virtual": 1,
    "label": "title"
+  },
+  {
+   "fieldname": "vlan",
+   "fieldtype": "Link",
+   "label": "vlan",
+   "options": "vlans"
+  },
+  {
+   "default": "0",
+   "fieldname": "trunk",
+   "fieldtype": "Check",
+   "label": "trunk"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "notes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-01-24 22:30:08.618498",
+ "modified": "2024-02-01 14:50:53.772916",
  "modified_by": "Administrator",
  "module": "Mpnet",
  "name": "ports",
